@@ -44,7 +44,7 @@ const App = () => {
 		setCart([...tempArr])
   }
   return (
-    <React.Fragment>
+    <>
       <Navbar size={cart.length} setShow={setShow} />
       
       {
@@ -53,7 +53,7 @@ const App = () => {
       {
         warning && <div className='warning'>This book is already added</div>
       }
-    </React.Fragment>
+    </>
   );
 }
 
